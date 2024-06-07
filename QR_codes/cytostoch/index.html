@@ -8,7 +8,22 @@
 <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101454464ns.gif" /></p></noscript>
 
     <script type="text/javascript">
-        window.location.href = "https://github.com/maxschelski/cytostoch";
+        // Function to redirect after a delay
+        function redirectAfterDelay() {
+            // Set the URL to redirect to
+            const url = "https://www.example.com";
+            
+            // Set the delay in milliseconds (e.g., 3000ms = 3 seconds)
+            const delay = 1000;
+
+            // Use setTimeout to redirect after the specified delay
+            setTimeout(() => {
+                window.location.href = url;
+            }, delay);
+        }
+
+        // Call the function when the window loads
+        window.onload = redirectAfterDelay;
     </script>
 </head>
 <body>
